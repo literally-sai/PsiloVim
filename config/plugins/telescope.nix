@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.telescope = {
+  plugins.telescope = {
     enable = true;
     extensions = {
       fzf-native.enable = true;
@@ -13,7 +13,9 @@
         preview_height = 0.6;
       };
       mappings.n = {
-        "q" = "require('telescope.actions').close";
+        "q" = {
+          __raw = "require('telescope.actions').close";
+        };
       };
     };
   };

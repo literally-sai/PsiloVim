@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.neo-tree = {
+  plugins.neo-tree = {
     enable = true;
     filesystem.window.mappings = {
       "a" = "add";

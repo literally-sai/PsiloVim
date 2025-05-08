@@ -3,7 +3,7 @@ let
   colors = import ./colors/${config.theme}.nix;
 in
 {
-  programs.nixvim.colorschemes = {
+  colorschemes = {
     base16 = {
       enable = true;
       setUpBar = false;

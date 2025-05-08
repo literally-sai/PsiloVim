@@ -1,5 +1,5 @@
 {
-  programs.nixvim.opts = {
+  opts = {
     number = true;
     relativenumber = true;
     tabstop = 2;
@@ -43,7 +43,6 @@
     signcolumn = "yes";
     timeoutlen = 400;
     fillchars.__raw = "{ eob = ' '}";
-    whichwrap.__raw = "<>[]hl";
     shortmess.__raw = "sI";
   };
 }

@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins = {
+  plugins = {
     cmp = {
       enable = true;
       settings = {
@@ -45,10 +45,10 @@
           };
         };
         mapping = {
-          "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-          "<C-n>" = "cmp.mapping.select_next_item()";
-          "<C-e>" = "cmp.mapping.select_prev_item()";
-          "<C-f>" = "cmp.mapping.abort()";
+          "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item, {'i', 's'})";
+          "<C-n>" = "cmp.mapping.select_next_item";
+          "<C-e>" = "cmp.mapping.select_prev_item";
+          "<C-f>" = "cmp.mapping.abort";
           "<C-v>" = "cmp.mapping.scroll_docs(-4)";
           "<C-t>" = "cmp.mapping.scroll_docs(4)";
           "<C-Space>" = "cmp.mapping.complete()";

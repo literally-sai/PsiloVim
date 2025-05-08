@@ -1,5 +1,5 @@
 {
-  programs.nixvim.plugins.lint = {
+  plugins.lint = {
     enable = true;
     lintersByFt = {
       nix = [ "nix" ];

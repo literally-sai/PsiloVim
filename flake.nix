@@ -19,11 +19,11 @@
       system:
       let
         pkgs = import nixpkgs { inherit system; };
-        nixvimLib = nixvim.lib.${system};
+        nixvim' = nixvim.legacyPackages.${system};
         nixvimModule = {
           imports = [ ./config ];
         };
-        nvim = nixvimLib.makeNixvimWithModule {
+        nvim = nixvim'.makeNixvimWithModule {
           inherit pkgs;
           module = nixvimModule;
         };
