@@ -105,19 +105,25 @@
     }
 
     {
-      mode = "n";
-      key = "<C-,>";
-      action = "<cmd>ToggleTerm direction=horizontal<cr>";
+      mode = [
+        "n"
+        "t"
+      ];
+      key = "<A-v>";
+      action = "<cmd>ToggleTerm direction=vertical id=1<cr>";
       options = {
-        desc = "Horizontal Term";
+        desc = "Toggle vertical terminal";
       };
     }
     {
-      mode = "n";
-      key = "<C-.>";
-      action = "<cmd>ToggleTerm direction=vertical<cr>";
+      mode = [
+        "n"
+        "t"
+      ];
+      key = "<A-h>";
+      action = "<cmd>ToggleTerm direction=horizontal id=2<cr>";
       options = {
-        desc = "Vertical Term";
+        desc = "Toggle horizontal terminal";
       };
     }
     {
