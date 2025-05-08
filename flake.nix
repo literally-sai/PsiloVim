@@ -38,7 +38,7 @@
             homepage = "https://github.com/literally-sai/Psilovim";
             license = pkgs.lib.licenses.mit;
             maintainers = [ "literally-sai" ];
-            platforms = [ "aarch64-linux" "x86_64-linux" ];
+            platforms = pkgs.lib.platforms.unix;
           };
         });
       in
