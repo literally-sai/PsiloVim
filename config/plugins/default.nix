@@ -1,0 +1,22 @@
+{
+  imports = [
+    ./bufferline.nix
+    ./cmp.nix
+    ./conform.nix
+    ./gitsigns.nix
+    ./indent-blankline.nix
+    ./lint.nix
+    ./lsp.nix
+    ./lualine.nix
+    ./luasnip.nix
+    ./mason.nix
+    ./neo-tree.nix
+    ./nvim-autopairs.nix
+    ./nvim-web-devicons.nix
+    ./telescope.nix
+    ./toggleterm.nix
+    ./treesitter.nix
+    ./undotree.nix
+    ./which-key.nix
+  ];
+}
