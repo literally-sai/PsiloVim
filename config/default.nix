@@ -2,7 +2,7 @@
 {
   options.theme = lib.mkOption {
     type = lib.types.str;
-    default = "jellybeans";
+    default = "radium";
     description = "Theme";
   };
   imports = [
