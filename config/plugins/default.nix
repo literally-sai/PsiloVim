@@ -1,5 +1,6 @@
 {
   imports = [
+    ./alpha.nix
     ./bufferline.nix
     ./cmp.nix
     ./conform.nix
