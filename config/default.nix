@@ -2,7 +2,7 @@
 {
   options.theme = lib.mkOption {
     type = lib.types.str;
-    default = "cyberdream";
+    default = "far";
     description = "Theme";
   };
   imports = [
