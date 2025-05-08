@@ -29,6 +29,7 @@
         };
         
         nvimWithMeta = nvim.overrideAttrs (old: {
+          lua = pkgs.neovim-unwrapped.lua;
           meta = (old.meta or {}) // {
             description = "PsiloVim: A custom Neovim configuration with plugins and themes";
             longDescription = ''
