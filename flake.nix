@@ -28,20 +28,19 @@
           module = nixvimModule;
         };
         
-        nvimWithMeta = nvim.overrideAttrs (old: {
-          lua = pkgs.neovim-unwrapped.lua;
-          meta = (old.meta or {}) // {
-            description = "PsiloVim: A custom Neovim configuration with plugins and themes";
-            longDescription = ''
-              PsiloVim provides a preconfigured Neovim setup with plugins like Telescope, LSP,
-              and a customizable theme system, optimized for development workflows.
-            '';
-            homepage = "https://github.com/literally-sai/Psilovim";
-            license = pkgs.lib.licenses.mit;
-            maintainers = [ "literally-sai" ];
-            platforms = pkgs.lib.platforms.unix;
-          };
-        });
+nvimWithMeta = nvim.overrideAttrs (old: {
+  meta = (old.meta or {}) // {
+    description = "PsiloVim: A custom Neovim configuration with plugins and themes";
+    longDescription = ''
+      PsiloVim provides a preconfigured Neovim setup with plugins like Telescope, LSP,
+      and a customizable theme system, optimized for development workflows.
+    '';
+    homepage = "https://github.com/literally-sai/Psilovim";
+    license = pkgs.lib.licenses.mit;
+    maintainers = [ "literally-sai" ];
+    platforms = pkgs.lib.platforms.unix;
+  };
+});
       in
       {
         packages.default = nvimWithMeta;
